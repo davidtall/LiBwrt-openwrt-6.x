@@ -19,7 +19,7 @@ case "$board" in
         ;;
     redmi,ax5-jdcloud|\
     jdcloud,re-ss-01|\
-    jdcloud,ax6600)
+    jdcloud,re-cs-02)
         ucidef_set_led_netdev "wan" "WAN" "green:wan" "eth3" "link"
         ;;
     yuncore,fap650)

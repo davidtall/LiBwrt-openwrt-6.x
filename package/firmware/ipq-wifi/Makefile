@@ -31,7 +31,7 @@ ALLWIFIBOARDS:= \
 	arcadyan_aw1000 \
 	asus_rt-ax89x \
 	buffalo_wxr-5950ax12 \
-  cmiot_ax18 \
+	cmiot_ax18 \
 	cambiumnetworks_xe34 \
 	cmcc_rm2-6 \
 	compex_wpq873 \
@@ -41,9 +41,9 @@ ALLWIFIBOARDS:= \
 	glinet_gl-ax1800 \
 	glinet_gl-axt1800 \
 	jdcloud_re-ss-01 \
-  jdcloud_ax6600 \
-  linksys_mr7350 \
-  linksys_mx4200 \
+	jdcloud_re-cs-02 \
+	linksys_mr7350 \
+	linksys_mx4200 \
 	linksys_mx5300 \
 	linksys_mx8500 \
 	linksys_whw03 \
@@ -57,23 +57,23 @@ ALLWIFIBOARDS:= \
 	prpl_haze \
 	qihoo_360v6 \
 	qnap_301w \
-  qihoo_v6 \
-  redmi_ax3000 \
-  redmi_ax5 \
-  redmi_ax5-jdcloud \
+	qihoo_v6 \
+	redmi_ax3000 \
+	redmi_ax5 \
+	redmi_ax5-jdcloud \
 	redmi_ax6 \
 	skspruce_wia3300-20 \
 	spectrum_sax1v1k \
 	tplink_eap620hd-v1 \
 	tplink_eap660hd-v1 \
 	wallys_dr40x9 \
-  xiaomi_ax1800 \
+	xiaomi_ax1800 \
 	xiaomi_ax3600 \
 	xiaomi_ax9000 \
-  xiaomi_cr881x \
+	xiaomi_cr881x \
 	yyets_le1 \
 	yuncore_ax880 \
-  zn_m2 \
+	zn_m2 \
 	yuncore_fap650 \
 	zbtlink_zbt-z800ax \
 	zte_mf269 \
@@ -187,7 +187,7 @@ $(eval $(call generate-ipq-wifi-package,edimax_cax1800,Edimax CAX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-ax1800,GL.iNet GL-AX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-axt1800,GL.iNet GL-AXT1800))
 $(eval $(call generate-ipq-wifi-package,jdcloud_re-ss-01,JDCloud RE-SS-01))
-$(eval $(call generate-ipq-wifi-package,jdcloud_ax6600,JDCloud AX6600))
+$(eval $(call generate-ipq-wifi-package,jdcloud_re-cs-02,JDCloud RE-CS-02))
 $(eval $(call generate-ipq-wifi-package,linksys_mr7350,Linksys MR7350))
 $(eval $(call generate-ipq-wifi-package,linksys_mx4200,Linksys MX4200))
 $(eval $(call generate-ipq-wifi-package,linksys_mx5300,Linksys MX5300))

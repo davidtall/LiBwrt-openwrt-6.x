@@ -50,7 +50,7 @@ platform_do_upgrade() {
 	jdcloud,re-cs-07|\
 	redmi,ax5-jdcloud|\
 	jdcloud,re-ss-01|\
-  jdcloud,ax6600)
+	jdcloud,re-cs-02)
 	  kernelname="0:HLOS"
 	  rootfsname="rootfs"
 	  emmc_do_upgrade "$1"
@@ -88,13 +88,13 @@ platform_do_upgrade() {
 }
 
 platform_copy_config() {
-	case "$(board_name)" in
-	jdcloud,re-ss-01|\
-  jdcloud,ax6600|\
+  case "$(board_name)" in
+  jdcloud,re-ss-01|\
+  jdcloud,re-cs-02|\
   jdcloud,re-cs-07|\
   redmi,ax5-jdcloud)
-		emmc_copy_config
-		;;
-	esac
+    emmc_copy_config
+    ;;
+  esac
 }
 
