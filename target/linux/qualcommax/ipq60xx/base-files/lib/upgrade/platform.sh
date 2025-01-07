@@ -51,8 +51,8 @@ platform_do_upgrade() {
 	redmi,ax5-jdcloud|\
 	jdcloud,re-ss-01|\
 	jdcloud,re-cs-02)
-	  kernelname="0:HLOS"
-	  rootfsname="rootfs"
+	  CI_KERNPART="0:HLOS"
+	  CI_ROOTPART="rootfs"
 	  emmc_do_upgrade "$1"
 	  ;;
 	yuncore,fap650)
