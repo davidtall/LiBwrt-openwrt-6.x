@@ -68,7 +68,7 @@ define Device/jdcloud_re-cs-02
 	DEVICE_DTS_CONFIG := config@cp03-c3
 	DEVICE_DTS := ipq6010-re-cs-02
 	SOC := ipq6010
-	DEVICE_PACKAGES := ipq-wifi-jdcloud_re-cs-02 kmod-ath11k-pci ath11k-firmware-qcn9074 kmod-fs-ext4 mkf2fs f2fsck kmod-fs-f2fs
+	DEVICE_PACKAGES := ipq-wifi-jdcloud_re-cs-02 kmod-fs-ext4 mkf2fs f2fsck kmod-fs-f2fs
 	BLOCKSIZE := 64k
 	KERNEL_SIZE := 6144k
 	IMAGE/factory.bin := append-kernel | pad-to $${KERNEL_SIZE}  |  append-rootfs | append-metadata
@@ -99,7 +99,7 @@ define Device/cambiumnetworks_xe3-4
 	PAGESIZE := 2048
 	DEVICE_DTS_CONFIG := config@cp01-c3-xv3-4
 	SOC := ipq6010
-	DEVICE_PACKAGES := ipq-wifi-cambiumnetworks_xe34 ath11k-firmware-qcn9074 kmod-ath11k-pci
+	DEVICE_PACKAGES := ipq-wifi-cambiumnetworks_xe34
 endef
 TARGET_DEVICES += cambiumnetworks_xe3-4
 
