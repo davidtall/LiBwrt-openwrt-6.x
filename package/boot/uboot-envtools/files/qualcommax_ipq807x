@@ -15,14 +15,15 @@ netgear,wax620|\
 netgear,wax630)
 	idx="$(find_mtd_index 0:appsblenv)"
 	[ -n "$idx" ] && \
-		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x40000" "0x20000" "2"
+		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x40000" "0x20000"
 	;;
+aliyun,ap8220|\
 compex,wpq873|\
 edgecore,eap102|\
 zyxel,nbg7815)
 	idx="$(find_mtd_index 0:appsblenv)"
 	[ -n "$idx" ] && \
-		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x10000" "0x10000" "1"
+		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x10000" "0x10000"
 	;;
 edimax,cax1800)
 	idx="$(find_mtd_index 0:appsblenv)"
@@ -35,12 +36,12 @@ linksys,mx5300|\
 linksys,mx8500)
 	idx="$(find_mtd_index u_env)"
 	[ -n "$idx" ] && \
-		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x40000" "0x20000" "2"
+		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x40000" "0x20000"
 	;;
 linksys,mx4300)
 	idx="$(find_mtd_index u_env)"
 	[ -n "$idx" ] && \
-		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x40000" "0x40000" "1"
+		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x40000" "0x40000"
 	;;
 netgear,sxr80|\
 netgear,sxs80|\
@@ -71,12 +72,12 @@ asus,rt-ax89x|\
 qnap,301w)
 	idx="$(find_mtd_index 0:appsblenv)"
 	[ -n "$idx" ] && \
-		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x20000" "0x20000" "1"
+		ubootenv_add_uci_config "/dev/mtd$idx" "0x0" "0x20000" "0x20000"
 	;;
 spectrum,sax1v1k)
 	mmcpart="$(find_mmc_part 0:APPSBLENV)"
 	[ -n "$mmcpart" ] && \
-		ubootenv_add_uci_config "$mmcpart" "0x0" "0x40000" "0x40000" "1"
+		ubootenv_add_uci_config "$mmcpart" "0x0" "0x40000" "0x40000"
 	;;
 esac
 

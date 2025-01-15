@@ -11,9 +11,6 @@ ipq807x_setup_interfaces()
 	local board="$1"
 
 	case "$board" in
-	aliyun,ap8220)
-		ucidef_set_interfaces_lan_wan "eth1" "eth0"
-		;;
 	asus,rt-ax89x)
 		ucidef_set_interfaces_lan_wan "10g-sfp 10g-copper lan1 lan2 lan3 lan4 lan5 lan6 lan7 lan8" "wan"
 		;;
@@ -41,6 +38,7 @@ ipq807x_setup_interfaces()
 	xiaomi,ax3600-stock)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" "wan"
 		;;
+	aliyun,ap8220|\
 	edgecore,eap102|\
 	yuncore,ax880|\
 	zte,mf269)
@@ -87,6 +85,10 @@ ipq807x_setup_macs()
 	local label_mac=""
 
 	case "$board" in
+		aliyun,ap8220)
+			wan_mac=$(cat /dev/mtd12 | head -n 4 | grep "product.mac" | awk -F " " '{print $2}')
+			lan_mac=$(macaddr_add $wan_mac 1)
+		;;
 		linksys,mx4200v2|\
 		linksys,mx4300)
 			label_mac=$(mtd_get_mac_ascii devinfo hw_mac_addr)
