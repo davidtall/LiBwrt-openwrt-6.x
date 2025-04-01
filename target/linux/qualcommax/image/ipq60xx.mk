@@ -60,6 +60,7 @@ define Device/linksys_mr7350
 	DEVICE_VENDOR := GL.iNet
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
+	KERNEL_SIZE := 8192k
 	DEVICE_DTS_CONFIG := config@cp03-c1
 	SOC := ipq6000
 	IMAGES += factory.bin
